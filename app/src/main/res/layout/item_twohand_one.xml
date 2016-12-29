@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingBottom="2dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp" >
+
+        <ImageView
+            android:id="@+id/im_two_twopic"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/defult_twopic" />
+
+        <TextView
+            android:id="@+id/tv_two_twocontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/im_two_twopic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/im_two_twopic"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_two_twoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_two_twocontent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/im_two_twopic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_12" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/im_two_twopic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/im_two_twopic"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_detail_tese1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/tese_red"
+                    android:textColor="#4594cd"
+                    android:textSize="8sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_detail_tese2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/tv_detail_tese1"
+                    android:background="@drawable/tese_orange"
+                    android:text="123"
+                    android:textColor="#d7b259"
+                    android:textSize="8sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_detail_tese3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/tv_detail_tese2"
+                    android:background="@drawable/tese_3"
+                    android:text="123"
+                    android:textColor="#9c5831"
+                    android:textSize="8sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_two_twoarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_bottom_label"
+            android:layout_below="@+id/tv_two_twoName"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/im_two_twopic"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/huise"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/tv_two_twomoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_bottom_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="123万"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_16" />
+        <CheckedTextView
+            android:id="@+id/btn_newhouse_compare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:background="@drawable/newhouse_bt_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

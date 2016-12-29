@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_onehouse_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/zise"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dadada" />
+
+        <TextView
+            android:id="@+id/tv_onehouse_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="地图"
+            android:textColor="@color/withe" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/tv_onehouse_map"
+            android:background="@mipmap/search_layout">
+
+            <EditText
+                android:id="@+id/et_onehouse_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入楼盘名称..."
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_onehouse_title"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/onehouse_area"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域"
+            android:padding="5dp"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/filter_down"/>
+    </RelativeLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#dadada" />
+
+        <RelativeLayout
+            android:id="@+id/onehouse_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="均价"
+                android:padding="5dp"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/filter_down"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#dadada" />
+
+        <RelativeLayout
+            android:id="@+id/onehouse_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <TextView
+                android:id="@+id/more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:padding="5dp"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/filter_down"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

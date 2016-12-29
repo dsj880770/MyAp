@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/study_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_centerVertical="true"
+
+         android:padding="7dp"
+         android:id="@+id/study_finish"
+         android:src="@mipmap/seacher_top_jian"/>
+        <RelativeLayout
+            android:id="@+id/study_title_rl"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/study_title_text"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="各楼盘市场研究"/>
+            <ImageView
+                android:layout_toRightOf="@+id/study_title_text"
+                android:layout_width="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/filter_down"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/study_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@mipmap/seacher_bar_bg"/>
+    </RelativeLayout>
+<com.bwf.p1_landz.view.test.RefreshListView_Bwf
+    android:id="@+id/seacher_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/study_title_ll"
+    android:cacheColorHint="#00000000"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+    android:fadingEdgeLength="0dp"
+    android:fastScrollEnabled="true"
+    android:listSelector="@color/transparent"/>
+    <RelativeLayout
+        android:id="@+id/rl_no_house"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/study_title_ll"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/map_fail" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--楼盘概览-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/test_View1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_dadada" />
+
+        <RelativeLayout
+            android:id="@+id/rl_visible_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test_View1"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="楼盘概览"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="装修标准: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_zhuangxiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="单平米精装修标准: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_zhuangxiumoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView8"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="占地面积: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_zhuangxiuarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView7"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="交房时间: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_jiaofangtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView11"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="容积率: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_rongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView13"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="绿化率: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_lvhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView14"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="层高: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_onedetail_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/textView15"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/rl_visible_title"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_zxc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="建筑面积: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc1"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="物业费: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_wuyefei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc1"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="供暖方式: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_gongnuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc3"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_flag"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="采暖方式: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_cainuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_flag"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc3"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="楼间距: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_loujianju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc4"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="建筑风格: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_jianzhufenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc5"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="车位数: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_cheweishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc6"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="外立面材质: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_caizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc7"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="开发商: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_kaifashang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc8"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="物业: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_wuye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc8"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc9"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_zxc10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="位置: "
+                android:textColor="@color/color_bcbcbc" />
+
+            <TextView
+                android:id="@+id/tv_gone_weizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zxc9"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tv_zxc10"
+                android:text=""
+                android:textColor="@color/color_bcbcbc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gone_down"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rl_gone_text"
+            android:layout_marginTop="10dp"
+            android:layout_height="27dp" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/first_down" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/rl_gone_down"
+            android:background="@color/color_dadada" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/MyTextView"
+            android:layout_margin="10dp"
+            android:text="项目特点描述"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/simple_black" />
+
+        <TextView
+            android:id="@+id/tv_house_project_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_bcbcbc"
+            android:layout_margin="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_dadada" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="交通配套"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_geo1" />
+
+            <TextView
+                android:id="@+id/tv_detail_mapName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dadada" />
+    </RelativeLayout>
+
+</LinearLayout>

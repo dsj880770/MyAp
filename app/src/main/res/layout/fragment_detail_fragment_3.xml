@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dadada"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_guwen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:drawableRight="@mipmap/first_more"
+        android:padding="10dp"
+        style="@style/MyTextView"
+        android:textColor="@color/black"
+        android:text="@string/guwen" />
+
+
+    <View
+        android:id="@+id/devier"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/simple_black" />
+
+    <ListView
+        android:id="@+id/lv_guwen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seahcer_list_item_bg_selector"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/study_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/study_top_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="北京US联邦2月份市场分析报告"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/study_title_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="北京US联邦2月份市场分析报告"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/study_des_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="根据北京交易管理网统计数据，US联邦2月份成交1套， US联邦社区总户数低，社区较小，紧邻燕莎使"
+        android:visibility="gone" />
+
+</LinearLayout>
